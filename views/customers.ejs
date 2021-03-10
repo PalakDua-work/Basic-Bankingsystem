@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking system</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+	<!-- NAV-BAR  starts-->
+	<nav>
+		<div class="top-nav">
+		<div class="logo">
+           <h4><span><a href="/">TSF</a></span></h4>
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/customers">Customers</a></li>
+				<li><a href="/transferhistory">Transferhistory</a></li>
+				
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	</nav>
+	<!-- NAV-BAR  ends-->
+</header>
+<div class="Customers-table">
+	<h1 class="customer-heading">Customers Information</h1>
+	<div class="container">
+		<div class="Customers-table-inner">
+	<table class="table">
+		<thead>
+
+			<tr class="row1">
+				<th>NAME</th>
+				<th>Email</th>
+				<th>AMOUNT</th>
+			</tr>
+		</thead>
+		<tr>
+			<% customersList.forEach(customers =>{%>
+			<tr class="d1">
+              <td><%= customers.name %> </td>
+              <td><%= customers.email %> </td>
+              <td><%= customers.Amount %> <a class="view-link" href="/customers/<%= customers.id %>">view...</a></td>
+            </tr>
+		<%})%>
+		</tr>
+	</table>
+
+</div>
+</div>
+</div>
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<p>@2021 Copyright TSF BANK</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

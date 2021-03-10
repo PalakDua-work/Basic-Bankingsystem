@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking system</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+	<!-- NAV-BAR  starts-->
+	<nav>
+		<div class="top-nav">
+		<div class="logo">
+           <h4><span><a href="/">TSF</a></span></h4>
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/customers">Customers</a></li>
+				<li><a href="/transferhistory">Transferhistory</a></li>
+				
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	</nav>
+	<!-- NAV-BAR  ends-->
+</header>
+   <div class="customer-information">
+   	  <div class="container">
+   	  	<div class="customer-information-inner">
+   	  		<div class="card-title welcoming"><h2>Welcome <%= customer.name %> !</h2></div>
+   	  		
+   	  		<div class="card" style="width: 18rem;">
+
+  <img class="card-img-top" src="../images/uniquen-uqn-23.jpg" alt="Card image cap" width="200px" height="300px">
+  <div class="card-body">
+    <h5 class="card-title"><%= customer.name %></h5>
+    <p class="card-text">Email: <%= customer.email %></p>
+    <p class="card-text"> Amount: <%= customer.Amount %></p>
+    <a href="/transfer"><button type="button" class="btn btn-warning">Transfer Money</button></a>
+  </div>
+</div>
+   	  	</div>
+   	  </div>
+   </div>
+
+
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<p>@2021 Copyright TSF BANK</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+   
+
+</body>
+</html>

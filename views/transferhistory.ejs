@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking system</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+	<!-- NAV-BAR  starts-->
+	<nav>
+		<div class="top-nav">
+		<div class="logo">
+           <h4><span><a href="/">TSF</a></span></h4>
+		</div>
+		
+		<div class="menu">
+			<div class="container">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/customers">Customers</a></li>
+				<li><a href="/">Transferhistory</a></li>
+				
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	</nav>
+	<!-- NAV-BAR  ends-->
+</header>
+
+	<div class="Customers-table">
+	<h1 class="customer-heading">Customers  Transfer Information</h1>
+	<div class="container">
+		<div class="Customers-table-inner">
+	<table class="table">
+		<thead>
+
+			<tr class="row1">
+				<th>SENDER'S NAME</th>
+				<th>RECEIVER'S NAME</th>
+				<th>AMOUNT TRANSFERRED</th>
+			</tr>
+			<tr>
+			<% transferList.forEach(transfers =>{%>
+			<tr class="d1">
+              <td><%= transfers.sendername %> </td>
+              <td><%= transfers.receivername %> </td>
+              <td><%= transfers.amount %></td>
+            </tr>
+		     <%})%>
+		</tr>
+
+		</thead>
+	</table>
+</div>
+</div>
+</div>
+
+
+</body>
+
+
+</html>
